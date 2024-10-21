@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <style>
+        .register{
+            display: flex;
+            justify-content: center;
+            color: chartreuse;
+        }
+        .body{
+            background-image: url(register.jpg);
+            background-repeat: no-repeat;
+            height: 800px;
+            width: 1550px;
+            
+        }
+        .body label{
+            color: aqua;
+        }
+        .body p{
+            color:aqua ;    
+        }
+        .alertinfo{
+            color: red;
+            border: 5px solid red;
+            padding:8px 10px;
+
+        }
+        .button{
+            font-size: 20px;
+            letter-spacing: 3px;
+            border: 5px solid violet;
+        }
+        .button:hover{
+            background-color:greenyellow;
+            transition: o.5s;
+        }
+        .alertinfo{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body align="center">
+    <div class="body">
+    <DIV class="register">
+    <h1>REGISTRATION FORM</h1>
+    </DIV>
+    <div>
+    <label>NAME:   <input type="text" placeholder="Enter your name"></label><BR><BR>
+    <label>MOBILENO.:  <input type="number"  placeholder="Enter your Mobileno." ></label><BR><BR>
+    <label>EMAILADDRESS:<input type="text" placeholder="Enter Your Mail Address"></label><br><br>
+    <label>DESTINATION:</label>
+    <SELECT>
+        <option value=" "></option>
+        <option value="america">AMERICA</option>
+        <OPTION value="india">INDIA</OPTION>
+        <option value="china">CHINA</option>
+    </SELECT><br><br>
+    <label>On Which Date You Want To Go...</label>
+    <input type="date"><br><br>
+    <p>Number Of Persons Are Travelling:</p>
+   <p>ONE<input type="radio"><br>
+    TWO<input type="radio"><br>
+    MORE<input type="radio"><br><br>
+    Gender:  
+    Male<input type="checkbox">
+    Female<input type="checkbox">
+    Others<input type="checkbox"><br><br>
+     Ticket-price<select>
+        <option value="  ">   </option>
+        <option value="america">AMERICA(for each person=8500)</option>
+        <option value="india">INDIA(for each person=9000)</option>
+        <option value="china">CHINA(for each person=9500)</option>
+     </select><br><br>
+     <button class="button">SUBMIT</button><br><br>
+    </div>
+    </div>
+    <footer>
+        <div class="alertinfo">
+            <strong>INFO! :</strong>
+           When you press the submit button,your ticket will be confirmed
+        </div>
+        </footer>
+        <script>
+            window.alert("Welcome to a registration page");
+        </script>
+</body>
+</html>
